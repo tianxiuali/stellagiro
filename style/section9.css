@@ -1,0 +1,288 @@
+.section9 {
+  padding: 90px 0;
+  background-color: #fff;
+}
+
+.section9 .sub-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #336d4c;
+}
+
+.section9 .title {
+  margin-top: 30px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+.section9 .divider {
+  width: 100px;
+  height: 3px;
+  margin: 20px auto 0;
+  background-color: #336d4c;
+}
+
+.section9 .introduction {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-top: 40px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.section9 .introduction .gold {
+  color: #f39800;
+  font-size: 28px;
+}
+
+.section9 .introduction .small {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.section9 .introduction .middle {
+  font-size: 18px;
+}
+
+.section9 .content {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.section9 .content .price-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.section9 .content .price-list .item {
+  width: 280px;
+  padding: 16px 0;
+  border-radius: 8px;
+  background-color: #fffcd1;
+  text-align: center;
+  color: #333;
+}
+
+.section9 .content .price-list .item .name {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+}
+
+.section9 .content .price-list .item .name .small {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.section9 .content .price-list .item .price {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.section9 .content .price-list .item .price .delete {
+  text-decoration: line-through;
+}
+
+.section9 .content .price-list .item .price .triangle {
+  width: 0;
+  height: 0;
+  border-width: 10px 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent #333;
+  margin: 0 10px;
+}
+
+.section9 .content .price-list .item .price .gold {
+  color: #f39800;
+}
+
+.section9 .content .price-list .item .price .gold .large {
+  font-size: 52px;
+}
+
+.section9 .content .tips {
+  margin-top: 4px;
+  font-size: 12px;
+  text-align: right;
+  letter-spacing: -1px;
+}
+
+.section9 .content .gray {
+  padding: 30px 50px;
+  margin-top: 40px;
+  background-color: #f2f2f2;
+}
+
+.section9 .content .gray .name {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section9 .content .gray .row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+
+.section9 .content .gray .row .item {
+  width: 180px;
+}
+
+.section9 .content .gray .row .item img {
+  width: 100%;
+}
+
+.section9 .content .gray .row .item .description {
+  text-align: center;
+  color: #336d4c;
+  font-size: 24px;
+}
+
+.section9 .content .vip-list {
+  display: flex;
+  gap: 50px;
+  margin-top: 60px;
+}
+
+.section9 .content .vip-list li {
+  width: 425px;
+}
+
+.section9 .content .vip-list li.grass {
+  border-color: #8cc63f;
+}
+
+.section9 .content .vip-list li.green {
+  border-color: #336d4c;
+}
+
+.section9 .content .vip-list li .top {
+  padding: 14px 0;
+  border-radius: 16px 16px 0 0;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+.section9 .content .vip-list li.grass .top {
+  background-color: #8cc63f;
+}
+
+.section9 .content .vip-list li.green .top {
+  background-color: #336d4c;
+}
+
+.section9 .content .vip-list li .bottom {
+  border: 3px solid;
+  border-radius: 0 0 16px 16px;
+  padding: 10px 30px 30px 30px;
+}
+
+.section9 .content .vip-list li.grass .bottom {
+  border-color: #8cc63f;
+}
+
+.section9 .content .vip-list li.green .bottom {
+  border-color: #336d4c;
+}
+
+.section9 .content .vip-list li .bottom .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  border-bottom: 2px dotted;
+  padding: 20px 0 10px;
+}
+
+.section9 .content .vip-list li .bottom .row.align-start {
+  align-items: start;
+}
+
+.section9 .content .vip-list li .bottom .row:last-child {
+  border: none;
+}
+
+.section9 .content .vip-list li.grass .bottom .row {
+  border-color: #8cc63f;
+}
+
+.section9 .content .vip-list li.green .bottom .row {
+  border-color: #336d4c;
+}
+
+.section9 .content .vip-list li .bottom .row .label {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.section9 .content .vip-list li.grass .bottom .row .label {
+  color: #8cc63f;
+}
+
+.section9 .content .vip-list li.green .bottom .row .label {
+  color: #336d4c;
+}
+
+.section9 .content .vip-list li .bottom .row .label.large {
+  font-size: 26px;
+}
+
+.section9 .content .vip-list li .bottom .row .label .small {
+  font-size: 12px;
+}
+
+.section9 .content .vip-list li .bottom .row .value {
+  font-size: 26px;
+  font-weight: bold;
+  color: #404040;
+  line-height: 1;
+}
+
+.section9 .content .vip-list li .bottom .row .value .small {
+  font-size: 20px;
+}
+
+.section9 .content .vip-list li .bottom .row .value .gold {
+  color: #f39800;
+  font-size: 48px;
+}
+
+@media screen and (max-width: 800px) {
+  .section9 .introduction {
+    display: block;
+    width: 270px;
+    margin: 40px auto 0;
+  }
+
+  .section9 .introduction .small {
+    text-align: right;
+  }
+
+  .section9 .content {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .section9 .content .price-list {
+    display: block;
+  }
+
+  .section9 .content .vip-list {
+    display: block;
+  }
+
+  .section9 .content .vip-list li {
+    width: 360px;
+  }
+}

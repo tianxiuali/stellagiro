@@ -1,0 +1,106 @@
+.header {
+  position: sticky;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.header .logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 220px;
+  background-color: #336d4c;
+  transition: height 0.2s linear;
+}
+
+.header .logo img {
+  width: 140px;
+}
+
+.header .menu {
+  flex: 1;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  padding-left: 18px;
+}
+
+.header .menu li {
+  font-size: 16px;
+}
+
+.header .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.header .info .phone {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #336d4c;
+  line-height: 1;
+}
+
+.header .info .text {
+  font-size: 10px;
+}
+
+.header .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 100%;
+}
+
+.header .box .text {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1;
+  color: #fff;
+}
+
+.header .box.line {
+  background: linear-gradient(135deg, #9ec003, #058e42);
+}
+
+.header .box.calendar {
+  background: linear-gradient(135deg, #fdd000, #f08400);
+}
+
+.header .box img {
+  width: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    height: 50px;
+  }
+
+  .header .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .header .logo img {
+    width: 80px;
+  }
+
+  .header .info,
+  .header .box {
+    display: none;
+  }
+}

@@ -1,0 +1,162 @@
+.section3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0 60px;
+  background-color: #f2f2f2;
+}
+
+.section3 .title {
+  color: #336d4c;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+
+.section3 .title .sp {
+  display: none;
+}
+
+.section3 .title .number {
+  font-size: 48px;
+}
+
+.section3 .info {
+  display: flex;
+  gap: 40px;
+  width: 900px;
+  margin-top: 42px;
+}
+
+.section3 .info .contact {
+  flex: 1;
+}
+
+.section3 .info .contact .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4d4d4d;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.section3 .info .contact .text img {
+  width: 18px;
+}
+
+.section3 .info .contact .button {
+  height: 70px;
+  padding: 2px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.section3 .info .contact .button > .inner {
+  position: relative;
+  height: 100%;
+  padding: 0 0 0 58px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 66px;
+}
+
+.section3 .info .contact .button.orange {
+  background: linear-gradient(to bottom, #fdd000, #f08400);
+}
+
+.section3 .info .contact .button.orange > .inner {
+  background: linear-gradient(to top, #fdd000, #f08400);
+}
+
+.section3 .info .contact .button.green {
+  background: linear-gradient(to bottom, #9ec003, #058e42);
+}
+
+.section3 .info .contact .button.green > .inner {
+  background: linear-gradient(to top, #9ec003, #058e42);
+}
+
+.section3 .info .contact .button > .inner .play {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.section3 .info .contact .button > .inner .play .icon {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  transform: rotate(90deg);
+  font-size: 22px;
+}
+
+.section3 .info .contact .button.orange > .inner .play .icon {
+  color: #f39800;
+}
+
+.section3 .info .contact .button.green > .inner .play .icon {
+  color: #336d4c;
+}
+
+.section3 .info .phone {
+  flex: 1;
+  padding: 26px 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #4d4d4d;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section3 .info .phone .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 0;
+  font-size: 48px;
+  color: #336d4c;
+}
+
+@media screen and (max-width: 800px) {
+  .section3 .title {
+    font-size: 32px;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .section3 .title .sp {
+    display: block;
+  }
+
+  .section3 .title span.sp {
+    display: inline;
+  }
+
+  .section3 .title .pc {
+    display: none;
+  }
+
+  .section3 .info {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 36px;
+  }
+
+  .section3 .info .phone {
+    margin-top: 36px;
+  }
+
+  .section3 .info .phone .number {
+    font-size: 34px;
+  }
+}

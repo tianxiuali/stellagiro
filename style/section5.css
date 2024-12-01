@@ -1,0 +1,129 @@
+.section5 {
+  padding: 170px 0 100px;
+}
+
+.section5 .sub-title {
+  font-size: 14px;
+  color: #336d4c;
+  text-align: center;
+  font-weight: bold;
+}
+
+.section5 .title {
+  margin-top: 30px;
+  color: #333;
+  font-size: 38px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.section5 .divider {
+  width: 100px;
+  height: 3px;
+  margin: 24px auto 0;
+  background-color: #336d4c;
+}
+
+.section5 .content {
+  width: 900px;
+  margin: 70px auto 0;
+}
+
+.section5 .content .row {
+  display: flex;
+  gap: 38px;
+}
+
+.section5 .content .row.right {
+  justify-content: end;
+}
+
+.section5 .content .row + .row {
+  margin-top: 60px;
+}
+
+.section5 .content .row .line {
+  width: 150px;
+  height: 3px;
+  background-color: #e8f4d9;
+}
+
+.section5 .content .row .reason-img {
+  width: 390px;
+}
+
+.section5 .content .row .no-1 {
+  width: 121px;
+}
+
+.section5 .content .row .reason-title {
+  margin-top: 30px;
+  color: #336d4c;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.section5 .content .row .reason-description {
+  width: 310px;
+  color: #333;
+  margin-top: 28px;
+}
+
+@media screen and (max-width: 800px) {
+  .section5 {
+    padding: 50px 0;
+  }
+
+  .section5 .title {
+    font-size: 24px;
+  }
+
+  .section5 .content {
+    width: 100%;
+    margin-top: 48px;
+  }
+
+  .section5 .content .row {
+    gap: 18px;
+  }
+
+  .section5 .content .row + .row {
+    margin-top: 28px;
+  }
+
+  .section5 .content .row .line {
+    display: none;
+  }
+
+  .section5 .content .row .reason-description {
+    width: 200px;
+    padding-top: 12px;
+    border-top: 2px solid #e8f4d9;
+    margin-left: 20px;
+    margin-top: 6px;
+  }
+
+  .section5 .content .row .reason-img {
+    width: 50%;
+  }
+
+  .section5 .content .row .reason-content {
+    position: relative;
+    flex: 1;
+    padding-left: 4px;
+  }
+
+  .section5 .content .row .reason-title {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 120px;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .section5 .content .row .no-1 {
+    width: 73px;
+  }
+}

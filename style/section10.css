@@ -1,0 +1,101 @@
+.section10 {
+  padding: 90px 0 80px;
+  background-color: #8cc63f;
+}
+
+.section10 .sub-title {
+  font-size: 16px;
+  color: #ffe400;
+  text-align: center;
+  font-weight: bold;
+}
+
+.section10 > .title {
+  margin-top: 30px;
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.section10 .divider {
+  width: 100px;
+  height: 3px;
+  margin: 24px auto 0;
+  background-color: #ffe400;
+}
+
+.section10 .faq-list {
+  width: 1080px;
+  margin: 0 auto;
+  margin-top: 46px;
+}
+
+.section10 .faq-list li {
+  position: relative;
+  max-height: 140px;
+  padding: 24px 30px;
+  border-radius: 16px;
+  background-color: #fff;
+  color: #404040;
+  font-size: 14px;
+}
+
+.section10 .faq-list li + li {
+  margin-top: 20px;
+}
+
+.section10 .faq-list li .question {
+  display: flex;
+  align-items: end;
+}
+
+.section10 .faq-list li .text {
+  flex: 1;
+  margin-left: 14px;
+}
+
+.section10 .faq-list li .x {
+  position: absolute;
+  top: 24px;
+  right: 30px;
+  font-size: 30px;
+  transition: all 0.3s linear;
+}
+
+.section10 .faq-list li .checkbox {
+  display: none;
+}
+
+.section10 .faq-list li .checkbox:checked + .x {
+  transform: rotate(45deg);
+}
+
+.section10 .faq-list li .question .q {
+  width: 25px;
+}
+
+.section10 .faq-list li .answer {
+  display: flex;
+  align-items: end;
+  height: 0;
+  transition: all 0.3s linear;
+  overflow: hidden;
+}
+
+.section10 .faq-list li .checkbox:checked ~ .answer {
+  height: 44px;
+  padding-top: 20px;
+  border-top: 1px solid #404040;
+  margin-top: 20px;
+}
+
+.section10 .faq-list li .answer .a {
+  width: 22px;
+}
+
+@media screen and (max-width: 800px) {
+  .section10 .faq-list {
+    width: 100%;
+  }
+}
