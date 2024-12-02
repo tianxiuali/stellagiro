@@ -87,11 +87,11 @@
 
 @media screen and (max-width: 800px) {
   .section1 {
-    padding: 45px 0;
+    padding: 45px 4px;
   }
 
   .section1 .card {
-    max-width: 400px;
+    max-width: 100%;
     padding: 14px 10px;
   }
 

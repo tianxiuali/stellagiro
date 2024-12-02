@@ -72,7 +72,7 @@ const initModal = () => {
     modal.style.display = 'none'
   })
 }
-// initModal()
+initModal()
 
 const initMenu = () => {
   const pageWidth = document.body.clientWidth
