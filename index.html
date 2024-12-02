@@ -2,7 +2,7 @@
 <html lang="NotoSans">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>【福岡/博多】インドアゴルフなら完全個室のステラジーロ | 今だけ無料体験実施中</title>
   <script src="./js/tailwind-3.4.15.min.js"></script>
   <link rel="stylesheet" type="text/css" href="./style/global.css">
@@ -21,6 +21,7 @@
   <link rel="stylesheet" type="text/css" href="./style/section10.css" />
   <link rel="stylesheet" type="text/css" href="./style/section11.css" />
   <link rel="stylesheet" type="text/css" href="./style/footer.css" />
+  <link rel="stylesheet" type="text/css" href="./style/modal.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
@@ -72,6 +73,31 @@
         <div class="text">フォームで予約</div>
       </div>
     </a>
+    <svg id="menu-icon" class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><path d="M3 18h18"/><path d="M3 6h18"/></svg>
+    <ul id="menu-sp" class="menu-sp">
+      <svg id="close-menu" class="close-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      <li>
+        <a href="#reason">選ばれる理由</a>
+      </li>
+      <li>
+        <a href="#point">こだわり</a>
+      </li>
+      <li>
+        <a href="#facility">施設紹介</a>
+      </li>
+      <li>
+        <a href="#case">お客様の声</a>
+      </li>
+      <li>
+        <a href="#price">料金表</a>
+      </li>
+      <li>
+        <a href="#faq">よくある質問</a>
+      </li>
+      <li>
+        <a href="#access">アクセス</a>
+      </li>
+    </ul>
   </header>
   <ul class="carousel">
     <li class="item">
@@ -176,8 +202,13 @@
   <div class="section2">
     <div class="info">
       <div class="inner">
+        <div class="sp">＼ さらに! ／</div>
         <div class="box">
-          <div>施設体験が3,000円(税込3,300円)のところ…</div>
+          <div>
+            <span>施設体験が3,000円</span>
+            <span class="small">(税込3,300円)</span>
+            <span>のところ…</span>
+          </div>
           <div>
             <span>今なら</span>
             <span class="main-text">無料体験実施中！</span>
@@ -388,28 +419,28 @@
     <div class="content">
       <div class="card">
         <img src="./images/point/1@3x.png" alt="" srcset="">
-        <p class="mt-8">朝6時から</p>
+        <p class="description1">朝6時から</p>
         <p>夜21時OPEN</p>
       </div>
       <div class="card">
         <img src="./images/point/2@3x.png" alt="" srcset="">
-        <p class="mt-5">クラブ・グローブ・</p>
+        <p class="description2">クラブ・グローブ・</p>
         <p>シューズの</p>
         <p>無料レンタル</p>
       </div>
       <div class="card">
         <img src="./images/point/3@3x.png" alt="" srcset="">
-        <p class="mt-8">広々とした</p>
+        <p class="description3">広々とした</p>
         <p>ゆとりのある打席</p>
       </div>
       <div class="card">
-        <img class="width-52" src="./images/point/4@3x.png" alt="" srcset="">
-        <p class="mt-5">周りの目が</p>
+        <img class="width4" src="./images/point/4@3x.png" alt="" srcset="">
+        <p class="description4">周りの目が</p>
         <p>気にならない</p>
         <p>完全個室</p>
       </div>
       <div class="card">
-        <img class="width-64" src="./images/point/5@3x.png" alt="" srcset="">
+        <img class="width5" src="./images/point/5@3x.png" alt="" srcset="">
         <p class="mt-5">入退室は</p>
         <p>お客様専用の</p>
         <p>QRコード</p>
@@ -462,6 +493,9 @@
       <div class="sub-title">FACILITIES</div>
       <div class="title">施設紹介</div>
       <div class="divider"></div>
+      <div class="video-sp">
+        <video src="./video/golf.mov" loop autoplay muted preload playsinline></video>
+      </div>
       <div class="sub-title gold">シミュレーター</div>
       <div class="gold-title">GOLZON VISON PLUS</div>
       <div class="main">
@@ -583,6 +617,8 @@
           </p>
         </div>
       </div>
+      <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
     </div>
   </div>
   <div class="section9" id="price">
@@ -600,7 +636,11 @@
     <div class="content">
       <div class="price-list">
         <div class="item">
-          <div class="name">施設体験</div>
+          <div class="name">
+            <span class="pc">施設体験</span>
+            <div class="sp">施設</div>
+            <div class="sp">体験</div>
+          </div>
           <div class="price">
             <span class="delete">3,300円</span>
             <span class="triangle"></span>
@@ -626,8 +666,12 @@
         </div>
         <div class="item">
           <div class="name">
-            <span>事務手数料</span>
-            <span class="small">※1</span>
+            <span class="pc">事務手数料</span>
+            <span class="pc small">※1</span>
+            <div class="sp">事務</div>
+            <div class="sp">
+              <span>手数料</span><span class="small">※1</span>
+            </div>
           </div>
           <div class="price">
             <span class="delete">11,000円</span>
@@ -665,7 +709,7 @@
         <li class="grass">
           <div class="top">
             <div>時間を気にせず練習できるお得なコース</div>
-            <div>全日会員</div>
+            <div class="large">全日会員</div>
           </div>
           <div class="bottom">
             <div class="row">
@@ -700,7 +744,7 @@
         <li class="green">
           <div class="top">
             <div>平日のみ利用ができるお得なコース</div>
-            <div>平日会員</div>
+            <div class="large">平日会員</div>
           </div>
           <div class="bottom">
             <div class="row">
@@ -986,6 +1030,38 @@
       </a>
     </div>
     <p class="text">©2024 NON-BELL Co., Ltd.</p>
+  </footer>
+  <div class="modal" id="modal">
+    <div class="wrapper">
+      <img id="modal-img" src="./images/3x/modal@3x.png" alt="">
+      <div class="close" id="close-modal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </div>
+    </div>
+  </div>
+  <footer class="fixed">
+    <img class="girl" src="./images/3x/girl@3x.png" alt="">
+    <div class="flex-1">
+      <div class="mt-2">お電話での予約も承っております。</div>
+      <div class="phone">
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"><path d="M725.681633 902.791837c-38.661224 0-82.02449-7.314286-127.477551-21.420408-109.191837-33.959184-216.816327-105.012245-303.020409-200.09796C166.138776 538.644898 104.489796 396.538776 116.506122 270.106122c3.657143-31.346939 13.583673-71.053061 60.604082-102.922449 36.04898-29.257143 77.322449-45.97551 109.714286-45.453061 33.959184 0.522449 45.453061 12.538776 80.457143 63.216327 53.812245 74.187755 57.469388 110.759184 55.379591 131.657143-3.657143 34.481633-22.465306 49.632653-39.706122 63.216326-4.179592 3.134694-8.359184 6.791837-12.016326 9.926531-20.897959 26.644898-46.497959 63.738776 63.216326 177.110204 93.518367 89.861224 144.195918 100.832653 165.616327 99.265306 16.718367-1.044898 22.987755-9.926531 25.6-13.061225l0.522449-0.522448c35.004082-49.110204 46.497959-61.126531 79.934693-66.351021 32.391837-5.22449 49.110204 5.22449 118.07347 48.587755 62.171429 39.183673 90.906122 65.306122 84.636735 106.579592-2.089796 44.930612-36.571429 106.057143-75.232654 133.746939-26.644898 18.285714-63.738776 27.689796-107.624489 27.689796z"></path></svg>
+        <span>092-409-9505</span>
+      </div>
+      <div class="text mt-1">受付時間：24時間受付</div>
+      <div class="text">※不在の場合は1営業日以内に折り返しいたします</div>
+    </div>
+    <a href="https://lin.ee/bbMaTPfV" target="_blank" rel="noopener noreferrer">
+      <div class="box line">
+        <img src="./images/3x/line@3x.png" alt="line" srcset="">
+        <div class="text">LINEで予約</div>
+      </div>
+    </a>
+    <a href="https://stellagiro.hacomono.jp/widgets/1?isFilterableByCategory=true&isShowStudiolnfo=true" target="_blank" rel="noopener noreferrer">
+      <div class="box calendar">
+        <img src="./images/3x/calendar@3x.png" alt="calendar" srcset="">
+        <div class="text">フォームで予約</div>
+      </div>
+    </a>
   </footer>
 </body>
 <script src="./js/main.js"></script>

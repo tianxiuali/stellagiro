@@ -42,10 +42,54 @@ const handleVideoScroll = () => {
 }
 
 const initSwiper = () => {
+  const pageWidth = document.body.clientWidth
+  if (pageWidth > 800) {
+    return
+  }
   const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
-    autoplay: true
+    autoplay: true,
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
   });
 }
 initSwiper()
+
+const initModal = () => {
+  document.body.style.overflow = 'hidden'
+  const modal = document.getElementById('modal')
+  document.getElementById('modal-img').addEventListener('click', () => {
+    document.body.style.overflow = 'auto'
+    modal.style.display = 'none'
+    location.href = '/#price'
+  })
+
+  document.getElementById('close-modal').addEventListener('click', () => {
+    document.body.style.overflow = 'auto'
+    modal.style.display = 'none'
+  })
+}
+// initModal()
+
+const initMenu = () => {
+  const pageWidth = document.body.clientWidth
+  if (pageWidth > 800) {
+    return
+  }
+  document.getElementById('menu-icon').addEventListener('click', () => {
+    document.getElementById('menu-sp').style.display = 'block'
+  })
+  document.getElementById('close-menu').addEventListener('click', () => {
+    document.getElementById('menu-sp').style.display = 'none'
+  })
+  const menuList = document.querySelectorAll('#menu-sp li')
+  menuList.forEach(target => {
+    target.addEventListener('click', () => {
+      document.getElementById('menu-sp').style.display = 'none'
+    })
+  })
+}
+initMenu()

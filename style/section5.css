@@ -84,7 +84,7 @@
   }
 
   .section5 .content .row {
-    gap: 18px;
+    gap: 10px;
   }
 
   .section5 .content .row + .row {
@@ -96,7 +96,7 @@
   }
 
   .section5 .content .row .reason-description {
-    width: 200px;
+    width: auto;
     padding-top: 12px;
     border-top: 2px solid #e8f4d9;
     margin-left: 20px;

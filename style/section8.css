@@ -27,9 +27,12 @@
 
 .section8 .swiper {
   display: flex;
-  gap: 30px;
   width: 1080px;
   margin: 46px auto 0;
+}
+
+.section8 .swiper .swiper-wrapper {
+  gap: 30px;
 }
 
 .section8 .swiper .item {
@@ -80,8 +83,49 @@
 }
 
 @media screen and (max-width: 800px) {
+  .section8 > .title {
+    width: 270px;
+    margin: 30px auto 0;
+    font-size: 24px;
+  }
+
   .section8 .swiper {
-    width: 100%;
-    height: 560px;
+    width: 300px;
+  }
+
+  .section8 .swiper .swiper-wrapper {
+    gap: 0;
+  }
+
+  .section8 .swiper .item {
+    width: 300px;
+    height: 600px;
+    padding: 20px;
+    font-size: 12px;
+  }
+
+  .section8 .swiper .item .title {
+    font-size: 14px;
+  }
+
+  .section8 .swiper .item .age {
+    gap: 10px;
+    height: 20px;
+    margin-top: 12px;
+    font-size: 12px;
+  }
+
+  .section8 .swiper .item .age .border-item {
+    height: 12px;
+    padding-right: 10px;
+    line-height: 12px;
+  }
+
+  .section8 .swiper .item .introduction {
+    margin-top: 10px;
+  }
+
+  .section8 .swiper .swiper-button-prev {
+    left: -40px;
   }
 }

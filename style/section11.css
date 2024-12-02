@@ -62,7 +62,23 @@
 }
 
 @media screen and (max-width: 800px) {
+  .section11 .title {
+    font-size: 22px;
+  }
+
   .section11 .content {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin: 58px auto 0;
+  }
+
+  .section11 .content .info {
+    padding-top: 50px;
+    margin-left: 0;
+  }
+
+  .section11 .map {
     width: 100%;
   }
 }

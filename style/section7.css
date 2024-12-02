@@ -102,17 +102,18 @@
   margin-top: 20px;
 }
 
+.section7 .facility .video-sp {
+  display: none;
+  padding: 40px 20px;
+}
+
 @media screen and (max-width: 800px) {
   .section7 {
     display: block;
   }
 
   .section7 .video {
-    width: 100%;
-  }
-
-  .section7 .video video {
-    width: 360px;
+    display: none;
   }
 
   .section7 .facility {
@@ -125,5 +126,9 @@
 
   .section7 .facility .content {
     width: 360px;
+  }
+
+  .section7 .facility .video-sp {
+    display: block;
   }
 }
