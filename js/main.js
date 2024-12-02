@@ -50,11 +50,13 @@ const initSwiper = () => {
     direction: 'horizontal',
     loop: true,
     autoplay: true,
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
   });
+  document.getElementById('swiper-prev').addEventListener('click', () => {
+    swiper.slidePrev()
+  })
+  document.getElementById('swiper-next').addEventListener('click', () => {
+    swiper.slideNext()
+  })
 }
 initSwiper()
 

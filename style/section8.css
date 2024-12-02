@@ -82,6 +82,25 @@
   font-weight: bold;
 }
 
+.section8 .switch {
+  display: none;
+  position: absolute;
+  top: 280px;
+  width: 0;
+  height: 0;
+  border: 20px solid;
+}
+
+.section8 .switch.prev {
+  left: 0;
+  border-color: transparent #ffe400 transparent transparent;
+}
+
+.section8 .switch.next {
+  right: 0;
+  border-color: transparent transparent transparent #ffe400;
+}
+
 @media screen and (max-width: 800px) {
   .section8 > .title {
     width: 270px;
@@ -125,7 +144,7 @@
     margin-top: 10px;
   }
 
-  .section8 .swiper .swiper-button-prev {
-    left: -40px;
+  .section8 .switch {
+    display: block;
   }
 }
