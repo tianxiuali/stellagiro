@@ -128,15 +128,16 @@
   }
 
   .carousel .content .h1 {
-    font-size: 54px;
+    font-size: 12.5vw;
   }
   
   .carousel .content .h2 {
-    font-size: 40px;
+    font-size: 10vw;
   }
   
   .carousel .content .h3 {
-    font-size: 20px;
+    margin-top: 4vw;
+    font-size: 5vw;
   }
 
   .carousel .content .h3.sp {
@@ -148,13 +149,13 @@
   }
 
   .carousel .content .tag {
-    height: 30px;
-    padding: 0 6px;
-    font-size: 14px;
+    height: 7.5vw;
+    padding: 0 1.5vw;
+    font-size: 3.5vw;
   }
 
   .carousel .content .tag + .tag {
-    margin-left: 12px;
+    margin-left: 3vw;
   }
 
   .carousel .price {

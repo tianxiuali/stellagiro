@@ -23,6 +23,7 @@
   font-size: 32px;
   font-weight: bold;
   text-align: left;
+  line-height: 1;
 }
 
 .section4 .info .content {
@@ -110,28 +111,50 @@
 
   .section4 .info {
     width: 100%;
-    padding: 48px 20px;
+    padding: 12.5vw 5vw;
+  }
+
+  .section4 .info .inner {
+    font-size: 3.5vw;
   }
 
   .section4 .info .title {
-    font-size: 26px;
+    font-size: 6.5vw;
     text-align: center;
   }
 
+  .section4 .info .content .walk {
+    padding: 1vw;
+    font-size: 4vw;
+  }
+
+  .section4 .info .content .walk .large {
+    font-size: 6.5vw;
+  }
+
   .section4 .info .content .time {
-    font-size: 22px;
+    margin-left: 4vw;
+    font-size: 5.5vw;
   }
 
   .section4 .info .content .time .large {
-    font-size: 28px;
+    font-size: 7vw;
   }
 
   .section4 .info .content .time .open .sun {
-    width: 23px;
+    width: 5.5vw;
+  }
+
+  .section4 .info .content .time .open .special {
+    margin-left: 2vw;
   }
 
   .section4 .info .content .time .close .moon {
-    width: 17px;
+    width: 4vw;
+  }
+
+  .section4 .info .content .time .close .special {
+    margin-left: 3vw;
   }
 
   .section4 > img {

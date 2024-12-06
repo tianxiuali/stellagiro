@@ -78,6 +78,11 @@
     margin-left: 0;
   }
 
+  .section11 .content .info .row .label {
+    width: 27vw;
+    font-size: 3.5vw;
+  }
+
   .section11 .map {
     width: 100%;
   }

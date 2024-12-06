@@ -154,10 +154,11 @@
 
   .section3 .info .phone {
     margin-top: 36px;
-    font-size: 12px;
+    font-size: 3vw;
   }
 
   .section3 .info .phone .number {
-    font-size: 34px;
+    margin: 4vw 0;
+    font-size: 9vw;
   }
 }

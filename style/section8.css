@@ -146,5 +146,14 @@
 
   .section8 .switch {
     display: block;
+    border-width: 5vw;
+  }
+
+  .section8 .switch.prev {
+    left: -2vw;
+  }
+  
+  .section8 .switch.next {
+    right: -2vw;
   }
 }

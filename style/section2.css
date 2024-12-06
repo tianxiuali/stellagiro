@@ -86,8 +86,17 @@
     padding: 0 20px;
   }
 
+  .section2 .info .inner .box {
+    margin-top: 2vw;
+    font-size: 4.5vw;
+  }
+
   .section2 .info .inner .box .circle {
     display: none;
+  }
+
+  .section2 .info .inner .box .main-text {
+    font-size: 8vw;
   }
 
   .section2 .info .inner .sp {

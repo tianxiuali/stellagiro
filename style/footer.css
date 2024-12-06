@@ -32,7 +32,7 @@
 footer.fixed {
   display: none;
   position: fixed;
-  z-index: 9;
+  z-index: 8;
   right: 0;
   bottom: 0;
   left: 0;
@@ -93,5 +93,28 @@ footer.fixed .box img {
 
   footer.fixed {
     display: flex;
+    height: 20vw;
+    font-size: 2.5vw;
+  }
+
+  footer.fixed .phone {
+    font-size: 5vw;
+  }
+
+  footer.fixed .box {
+    width: 20vw;
+  }
+
+  footer.fixed .box img {
+    width: 11vw;
+  }
+
+  footer.fixed .text {
+    font-size: 2vw;
+  }
+
+  footer.fixed .box .text {
+    margin-top: 2vw;
+    font-size: 2vw;
   }
 }

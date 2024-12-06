@@ -288,7 +288,7 @@
 
   .section9 .content .price-list {
     display: block;
-    padding: 0 40px;
+    padding: 0 8vw;
     margin-top: 16px;
   }
 
@@ -296,7 +296,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 16px;
+    padding: 4vw;
   }
 
   .section9 .content .price-list .item + .item {
@@ -304,13 +304,18 @@
   }
 
   .section9 .content .price-list .item .name {
-    width: 100px;
-    font-size: 20px;
+    width: 25vw;
+    font-size: 5vw;
   }
 
   .section9 .content .price-list .item .price {
     flex: 1;
     align-items: center;
+  }
+
+  .section9 .content .price-list .item .price .gold .large {
+    font-size: 12vw;
+    font-weight: bold;
   }
 
   .section9 .content .tips {
@@ -338,7 +343,7 @@
 
   .section9 .content .vip-list {
     display: block;
-    padding: 0 20px;
+    padding: 0 5vw;
     margin-top: 30px;
   }
 
@@ -351,8 +356,12 @@
   }
 
   .section9 .content .vip-list li .top {
-    font-size: 14px;
+    font-size: 3.5vw;
   }
+
+  .section9 .content .vip-list li .top .large {
+    font-size: 6vw;
+}
 
   .section9 .content .price-list .item .name .sp {
     display: block;
@@ -360,5 +369,17 @@
 
   .section9 .content .price-list .item .name .pc {
     display: none;
+  }
+
+  .section9 .content .vip-list li .bottom .row .label.large {
+    font-size: 5vw;
+  }
+
+  .section9 .content .vip-list li .bottom .row .value {
+    font-size: 4vw;
+  }
+
+  .section9 .content .vip-list li .bottom .row .value .gold {
+    font-size: 9vw;
   }
 }
