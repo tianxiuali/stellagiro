@@ -1,6 +1,7 @@
 .section8 {
   padding: 90px 0 80px;
   background-color: #8cc63f;
+  overflow: hidden;
 }
 
 .section8 .sub-title {
