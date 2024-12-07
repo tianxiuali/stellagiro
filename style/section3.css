@@ -56,12 +56,12 @@
 .section3 .info .contact .button > .inner {
   position: relative;
   height: 100%;
-  padding: 0 0 0 58px;
   border-radius: 50px;
   color: #fff;
   font-size: 24px;
   font-weight: bold;
   line-height: 66px;
+  text-align: center;
 }
 
 .section3 .info .contact .button.orange {
@@ -124,11 +124,12 @@
   margin: 16px 0;
   font-size: 48px;
   color: #336d4c;
+  line-height: 1;
 }
 
 @media screen and (max-width: 800px) {
   .section3 .title {
-    font-size: 32px;
+    font-size: 8vw;
     text-align: center;
     line-height: 1;
   }
@@ -148,11 +149,12 @@
   .section3 .info {
     display: block;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 5vw;
     margin-top: 36px;
   }
 
   .section3 .info .phone {
+    padding: 6vw 4vw;
     margin-top: 36px;
     font-size: 3vw;
   }
@@ -160,5 +162,28 @@
   .section3 .info .phone .number {
     margin: 4vw 0;
     font-size: 9vw;
+  }
+
+  .section3 .info .contact .button {
+    height: 14.5vw;
+    padding: 0.5vw;
+  }
+
+  .section3 .info .contact .button > .inner {
+    font-size: 5vw;
+    line-height: 13.5vw;
+  }
+
+  .section3 .info .contact .button > .inner .play {
+    top: 1.5vw;
+    right: 2.5vw;
+    width: 10.5vw;
+    height: 10.5vw;
+  }
+
+  .section3 .info .contact .button > .inner .play .icon {
+    top: 3vw;
+    left: 3.5vw;
+    font-size: 4.5vw;
   }
 }

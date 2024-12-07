@@ -14,12 +14,14 @@
   position: fixed;
   top: 90px;
   left: 0;
+  padding: 20px 0;
 }
 
 .section7 .video.absolute {
   position: absolute;
   left: 0;
   bottom: 0;
+  padding: 20px 0;
 }
 
 .section7 .video video {
@@ -130,5 +132,9 @@
 
   .section7 .facility .video-sp {
     display: block;
+  }
+
+  .section7 .facility .content .title {
+    font-size: 4.5vw;
   }
 }

@@ -60,7 +60,9 @@
   top: 24px;
   right: 30px;
   font-size: 30px;
+  transform: rotate(45deg);
   transition: all 0.3s linear;
+  will-change: transform;
 }
 
 .section10 .faq-list li .checkbox {
@@ -68,7 +70,7 @@
 }
 
 .section10 .faq-list li .checkbox:checked + label .x {
-  transform: rotate(45deg);
+  transform: rotate(90deg);
 }
 
 .section10 .faq-list li .question .q {
@@ -78,13 +80,13 @@
 .section10 .faq-list li .answer {
   display: flex;
   align-items: end;
-  height: 0;
+  max-height: 0;
   transition: all 0.3s linear;
   overflow: hidden;
 }
 
 .section10 .faq-list li .checkbox:checked ~ .answer {
-  height: 44px;
+  max-height: 144px;
   padding-top: 20px;
   border-top: 1px solid #404040;
   margin-top: 20px;

@@ -143,6 +143,8 @@
 
   .section8 .swiper .item .introduction {
     margin-top: 10px;
+    font-size: 4vw;
+    letter-spacing: -1px;
   }
 
   .section8 .switch {

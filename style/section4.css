@@ -123,8 +123,12 @@
     text-align: center;
   }
 
+  .section4 .info .content {
+    margin-top: 8vw;
+  }
+
   .section4 .info .content .walk {
-    padding: 1vw;
+    padding: 2vw;
     font-size: 4vw;
   }
 
