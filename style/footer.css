@@ -51,7 +51,7 @@ footer.fixed .info {
   flex-direction: column;
   justify-content: center;
   gap: 0.5vw;
-  font-size: 3vw;
+  font-size: 2.5vw;
   letter-spacing: -1px;
 }
 
@@ -80,7 +80,7 @@ footer.fixed .box {
 
 footer.fixed .box .text {
   margin-top: 2vw;
-  font-size: 2vw;
+  font-size: 2.5vw;
   line-height: 1;
   color: #fff;
 }

@@ -61,6 +61,10 @@
   color: #336d4c;
 }
 
+.section11 .content .info .row .sp {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
   .section11 .title {
     font-size: 22px;
@@ -85,5 +89,13 @@
 
   .section11 .map {
     width: 100%;
+  }
+
+  .section11 .content .info .row .pc {
+    display: none;
+  }
+
+  .section11 .content .info .row .sp {
+    display: block;
   }
 }

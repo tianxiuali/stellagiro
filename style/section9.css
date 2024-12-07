@@ -382,4 +382,13 @@
   .section9 .content .vip-list li .bottom .row .value .gold {
     font-size: 9vw;
   }
+
+  .section9 .content .vip-list li .bottom {
+    padding: 0 5vw 5vw;
+  }
+
+  .section9 .content .vip-list li .bottom .row {
+    padding: 5vw 0 2.5vw;
+  }
+  
 }

@@ -84,7 +84,7 @@
   }
 
   .section5 .content .row {
-    gap: 10px;
+    gap: 2vw;
   }
 
   .section5 .content .row + .row {
@@ -97,33 +97,33 @@
 
   .section5 .content .row .reason-description {
     width: auto;
-    padding-top: 12px;
+    padding-top: 3vw;
     border-top: 2px solid #e8f4d9;
-    margin-left: 20px;
-    margin-top: 6px;
+    margin-left: 5vw;
+    margin-top: 2.5vw;
   }
 
   .section5 .content .row .reason-img {
-    width: 50%;
+    width: 48%;
   }
 
   .section5 .content .row .reason-content {
     position: relative;
     flex: 1;
-    padding-left: 4px;
+    padding-left: 1vw;
   }
 
   .section5 .content .row .reason-title {
     position: absolute;
     top: 0;
-    right: 10px;
+    right: 0;
     width: 120px;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 4vw;
     line-height: 1;
   }
 
   .section5 .content .row .no-1 {
-    width: 73px;
+    width: 17vw;
   }
 }
