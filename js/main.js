@@ -6,14 +6,14 @@ window.addEventListener('scroll', () => {
 const handleHeaderScroll = () => {
   const pageWidth = document.body.clientWidth
   const scrollTop = document.documentElement.scrollTop
+  const logo = document.getElementById('logo')
+  const logoImg = document.getElementById('logo-img')
   if (scrollTop > 10) {
-    document.getElementById('logo').style.height = '100%'
-    document.getElementById('logo-img').src = './images/3x/logo@3x.png'
-    document.getElementById('logo-img').style.width = pageWidth > 800 ? '180px' : '80px'
+    logo.classList.add('fixed')
+    logoImg.src = './images/3x/logo@3x.png'
   } else {
-    document.getElementById('logo').style.height = pageWidth > 800 ? '220px' : '100px'
-    document.getElementById('logo-img').src = './images/3x/logo-large@3x.png'
-    document.getElementById('logo-img').style.width = pageWidth > 800 ? '140px' : '58px'
+    logo.classList.remove('fixed')
+    logoImg.src = './images/3x/logo-large@3x.png'
   }
 }
 handleHeaderScroll()
