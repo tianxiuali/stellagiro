@@ -79,7 +79,7 @@
 
 .section10 .faq-list li .answer {
   display: flex;
-  align-items: end;
+  align-items: start;
   max-height: 0;
   transition: all 0.3s linear;
   overflow: hidden;
