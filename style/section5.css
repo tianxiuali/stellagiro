@@ -63,6 +63,10 @@
   font-weight: bold;
 }
 
+.section5 .content .row .reason-title.sp {
+  display: none;
+}
+
 .section5 .content .row .reason-description {
   width: 310px;
   color: #333;
@@ -116,14 +120,26 @@
   .section5 .content .row .reason-title {
     position: absolute;
     top: 0;
-    right: 0;
-    width: 120px;
+    right: 1vw;
+    width: 28vw;
     margin-top: 10px;
     font-size: 4vw;
     line-height: 1;
   }
 
+  .section5 .content .row .reason-title.sp {
+    display: block;
+  }
+
+  .section5 .content .row .reason-title.pc {
+    display: none;
+  }
+
   .section5 .content .row .no-1 {
     width: 17vw;
+  }
+
+  .section5 .content .row .reason-description {
+    font-size: 3.5vw;
   }
 }

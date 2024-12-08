@@ -83,6 +83,10 @@
   font-weight: bold;
 }
 
+.section8 .swiper .item .description {
+  margin-top: 12px;
+}
+
 .section8 .switch {
   display: none;
   position: absolute;
@@ -105,8 +109,8 @@
 @media screen and (max-width: 800px) {
   .section8 > .title {
     width: 270px;
-    margin: 30px auto 0;
-    font-size: 24px;
+    margin: 3vw auto 0;
+    font-size: 6vw;
   }
 
   .section8 .swiper {
@@ -118,33 +122,39 @@
   }
 
   .section8 .swiper .item {
-    width: 300px;
-    height: 600px;
+    width: 100%;
+    height: auto;
     padding: 20px;
-    font-size: 12px;
+    font-size: 3vw;
   }
 
   .section8 .swiper .item .title {
-    font-size: 14px;
+    font-size: 3.5vw;
   }
 
   .section8 .swiper .item .age {
     gap: 10px;
-    height: 20px;
+    height: 5vw;
     margin-top: 12px;
-    font-size: 12px;
+    font-size: 3vw;
   }
 
   .section8 .swiper .item .age .border-item {
-    height: 12px;
+    height: 3vw;
     padding-right: 10px;
-    line-height: 12px;
+    line-height: 3vw;
   }
 
   .section8 .swiper .item .introduction {
-    margin-top: 10px;
+    margin-top: 3vw;
     font-size: 4vw;
     letter-spacing: -1px;
+    line-height: 1;
+  }
+
+  .section8 .swiper .item .description {
+    font-size: 3.5vw;
+    line-height: 1.4;
   }
 
   .section8 .switch {

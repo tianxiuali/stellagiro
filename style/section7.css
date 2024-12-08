@@ -148,4 +148,12 @@
     margin-top: 2.5vw;
     letter-spacing: -1px;
   }
+
+  .section7 .facility .sub-title {
+    font-size: 3vw;
+  }
+
+  .section7 .facility .gold-title {
+    font-size: 5vw;
+  }
 }

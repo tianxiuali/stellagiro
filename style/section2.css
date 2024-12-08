@@ -105,6 +105,7 @@
 
   .section2 .info .inner .text {
     font-size: 16px;
+    letter-spacing: -1px;
   }
 
   .section2 img {
