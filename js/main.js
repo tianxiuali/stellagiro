@@ -49,7 +49,9 @@ const initSwiper = () => {
   const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
-    autoplay: true,
+    autoplay: {
+      delay: 6000,
+    }
   });
   document.getElementById('swiper-prev').addEventListener('click', () => {
     swiper.slidePrev()
@@ -95,3 +97,23 @@ const initMenu = () => {
   })
 }
 initMenu()
+
+const initMarquee = () => {
+  $(function () {
+    $('.marquee').marquee({
+      duration: 5000
+    })
+  })
+}
+// initMarquee()
+
+const initFaqClick = () => {
+  $('.faq-list li').on('click', function () {
+    $(this).find('.answer').slideToggle();
+  })
+
+  // $('.faq-list li .question').on('touchstart', (e) => {
+  //   $(e.target).next('.answer').slideToggle();
+  // })
+}
+initFaqClick()

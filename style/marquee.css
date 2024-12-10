@@ -47,3 +47,24 @@
   width: 11px;
   height: 14px;
 }
+
+@media screen and (max-width: 800px) {
+  .marquee {
+    height: 13vw;
+    font-size: 5vw;
+  }
+
+  .marquee .content {
+    padding: 0 5vw;
+  }
+
+  .marquee .content .tag {
+    height: 8vw;
+    line-height: 8vw;
+    font-size: 4.5vw;
+  }
+
+  .marquee .content .location {
+    font-size: 3vw;
+  }
+}

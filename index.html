@@ -25,6 +25,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="./js/tailwind-3.4.15.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"></script>
 </head>
 <body>
   <header class="header">
@@ -855,109 +857,116 @@
     <div class="divider"></div>
     <ul class="faq-list">
       <li>
-        <input type="checkbox" name="q1" id="q1" class="checkbox">
-        <label for="q1" class="cursor-pointer">
+        <div class="question">
           <svg class="x" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-          <div class="question">
+          <div class="flex">
             <img class="q" src="./images/3x/q@3x.png" alt="q" srcset="">
             <span class="text">プライベートレッスンや友人などの同伴は可能ですか？</span>
           </div>
-        </label>
+        </div>
         <div class="answer">
-          <img class="a" src="./images/3x/a@3x.png" alt="a" srcset="">
-          <span class="text">可能です。あなた＋1名様まで入室可能ですので、専属トレーナー様との練習場にもご利用いただけます。</span>
+          <div class="inner">
+            <img class="a" src="./images/3x/a@3x.png" alt="a" srcset="">
+            <span class="text">可能です。あなた＋1名様まで入室可能ですので、専属トレーナー様との練習場にもご利用いただけます。</span>
+          </div>
         </div>
       </li>
       <li>
-        <input type="checkbox" name="q2" id="q2" class="checkbox">
-        <label for="q2" class="cursor-pointer">
+        <div class="question">
           <svg class="x" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-          <div class="question">
+          <div class="flex">
             <img class="q" src="./images/3x/q@3x.png" alt="q" srcset="">
             <span class="text">営業時間を教えてください。</span>
           </div>
-        </label>
+        </div>
         <div class="answer">
-          <img class="a" src="./images/3x/a@3x.png" alt="a" srcset="">
-          <div>
-            <div class="text">朝6:00 ～ 夜21:00【年中無休】です。(ビルの休館日は除く)</div>
-            <div class="text">またゴルフ＆カラオケバーを夜19:00 ～ LAST【日曜定休】で営業しております。</div>
+          <div class="inner">
+            <img class="a" src="./images/3x/a@3x.png" alt="a" srcset="">
+            <div>
+              <div class="text">朝6:00 ～ 夜21:00【年中無休】です。(ビルの休館日は除く)</div>
+              <div class="text">またゴルフ＆カラオケバーを夜19:00 ～ LAST【日曜定休】で営業しております。</div>
+            </div>
           </div>
         </div>
       </li>
       <li>
-        <input type="checkbox" name="q3" id="q3" class="checkbox">
-        <label for="q3" class="cursor-pointer">
+        <div class="question">
           <svg class="x" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-          <div class="question">
+          <div class="flex">
             <img class="q" src="./images/3x/q@3x.png" alt="q" srcset="">
             <span class="text">飲料の持ち込みは可能ですか？</span>
           </div>
-        </label>
+        </div>
         <div class="answer">
-          <img class="a" src="./images/3x/a@3x.png" alt="a" srcset="">
-          <div>
-            <div class="text">持ち込み可能です。</div>
-            <div class="text">ただし、機材故障・破損などのトラブルはお客様負担となりますので十分にご注意ください。</div>
+          <div class="inner">
+            <img class="a" src="./images/3x/a@3x.png" alt="a" srcset="">
+            <div>
+              <div class="text">持ち込み可能です。</div>
+              <div class="text">ただし、機材故障・破損などのトラブルはお客様負担となりますので十分にご注意ください。</div>
+            </div>
           </div>
         </div>
       </li>
       <li>
-        <input type="checkbox" name="q4" id="q4" class="checkbox">
-        <label for="q4" class="cursor-pointer">
+        <div class="question">
           <svg class="x" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-          <div class="question">
+          <div class="flex">
             <img class="q" src="./images/3x/q@3x.png" alt="q" srcset="">
             <span class="text">貸しクラブやシューズはありますか？</span>
           </div>
-        </label>
+        </div>
         <div class="answer">
-          <img class="a" src="./images/3x/a@3x.png" alt="a" srcset="">
-          <span class="text">クラブ・シューズ・グローブ・ボールは全て無料レンタルで貸出しております。</span>
+          <div class="inner">
+            <img class="a" src="./images/3x/a@3x.png" alt="a" srcset="">
+            <span class="text">クラブ・シューズ・グローブ・ボールは全て無料レンタルで貸出しております。</span>
+          </div>
         </div>
       </li>
       <li>
-        <input type="checkbox" name="q5" id="q5" class="checkbox">
-        <label for="q5" class="cursor-pointer">
+        <div class="question">
           <svg class="x" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-          <div class="question">
+          <div class="flex">
             <img class="q" src="./images/3x/q@3x.png" alt="q" srcset="">
             <span class="text">契約ロッカーなどはありますか？</span>
           </div>
-        </label>
+        </div>
         <div class="answer">
-          <img class="a" src="./images/3x/a@3x.png" alt="a" srcset="">
-          <span class="text">ございません。</span>
+          <div class="inner">
+            <img class="a" src="./images/3x/a@3x.png" alt="a" srcset="">
+            <span class="text">ございません。</span>
+          </div>
         </div>
       </li>
       <li>
-        <input type="checkbox" name="q6" id="q6" class="checkbox">
-        <label for="q6" class="cursor-pointer">
+        <div class="question">
           <svg class="x" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-          <div class="question">
+          <div class="flex">
             <img class="q" src="./images/3x/q@3x.png" alt="q" srcset="">
             <span class="text">レフティはありますか？</span>
           </div>
-        </label>
+        </div>
         <div class="answer">
-          <img class="a" src="./images/3x/a@3x.png" alt="a" srcset="">
-          <span class="text">右打席専用となります。</span>
+          <div class="inner">
+            <img class="a" src="./images/3x/a@3x.png" alt="a" srcset="">
+            <span class="text">右打席専用となります。</span>
+          </div>
         </div>
       </li>
       <li>
-        <input type="checkbox" name="q7" id="q7" class="checkbox">
-        <label for="q7" class="cursor-pointer">
+        <div class="question">
           <svg class="x" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-          <div class="question">
+          <div class="flex">
             <img class="q" src="./images/3x/q@3x.png" alt="q" srcset="">
             <span class="text">駐車場・駐輪場はありますか？</span>
           </div>
-        </label>
+        </div>
         <div class="answer">
-          <img class="a" src="./images/3x/a@3x.png" alt="a" srcset="">
-          <div>
-            <div class="text">契約駐車場・駐輪場はございません。</div>
-            <div class="text">お近くのパーキングをご利用ください。</div>
+          <div class="inner">
+            <img class="a" src="./images/3x/a@3x.png" alt="a" srcset="">
+            <div>
+              <div class="text">契約駐車場・駐輪場はございません。</div>
+              <div class="text">お近くのパーキングをご利用ください。</div>
+            </div>
           </div>
         </div>
       </li>

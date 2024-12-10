@@ -33,7 +33,6 @@
 
 .section10 .faq-list li {
   position: relative;
-  max-height: 140px;
   padding: 24px 30px;
   border-radius: 16px;
   background-color: #fff;
@@ -48,6 +47,7 @@
 .section10 .faq-list li .question {
   display: flex;
   align-items: end;
+  cursor: pointer;
 }
 
 .section10 .faq-list li .text {
@@ -65,31 +65,22 @@
   will-change: transform;
 }
 
-.section10 .faq-list li .checkbox {
-  display: none;
-}
-
-.section10 .faq-list li .checkbox:checked + label .x {
-  transform: rotate(90deg);
-}
-
 .section10 .faq-list li .question .q {
   width: 25px;
+  height: 25px;
 }
 
 .section10 .faq-list li .answer {
-  display: flex;
-  align-items: start;
-  max-height: 0;
-  transition: all 0.3s linear;
-  overflow: hidden;
-}
-
-.section10 .faq-list li .checkbox:checked ~ .answer {
-  max-height: 144px;
+  display: none;
   padding-top: 20px;
   border-top: 1px solid #404040;
   margin-top: 20px;
+  overflow: hidden;
+}
+
+.section10 .faq-list li .answer .inner {
+  display: flex;
+  align-items: start;
 }
 
 .section10 .faq-list li .answer .a {
@@ -106,20 +97,13 @@
     padding: 0 20px;
   }
 
-  .section10 .faq-list li {
-    max-height: 240px;
-  }
-
   .section10 .faq-list li .question {
     padding-right: 10px;
     align-items: start;
   }
 
   .section10 .faq-list li .x {
-    right: 12px;
-  }
-
-  .section10 .faq-list li .answer {
-    align-items: start;
+    right: 3vw;
+    font-size: 5.5vw;
   }
 }
