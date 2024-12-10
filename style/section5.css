@@ -127,6 +127,10 @@
     line-height: 1;
   }
 
+  .section5 .content .row:first-child .reason-title {
+    top: 3vw;
+  }
+
   .section5 .content .row:nth-child(2) .reason-title {
     right: 2.5vw;
   }

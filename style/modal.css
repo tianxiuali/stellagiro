@@ -52,4 +52,8 @@
   .modal .wrapper {
     width: 100%;
   }
+
+  .modal .wrapper img {
+    width: 100%;
+  }
 }
