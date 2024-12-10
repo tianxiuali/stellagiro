@@ -1,7 +1,11 @@
 .marquee {
+  display: flex;
+  gap: 20px;
+  align-items: center;
   height: 60px;
   background-color: #8cc63f;
   color: #fff;
+  font-size: 30px;
   overflow: hidden;
 }
 
@@ -39,7 +43,7 @@
   }
 }
 
-.marquee .js-marquee .tag {
+.marquee .tag {
   flex-shrink: 0;
   height: 40px;
   padding: 0 10px;
@@ -49,12 +53,12 @@
   line-height: 40px;
 }
 
-.marquee .js-marquee .location {
+.marquee .location {
   flex-shrink: 0;
   font-size: 14px;
 }
 
-.marquee .js-marquee .location .location-img {
+.marquee .location .location-img {
   width: 11px;
   height: 14px;
 }
@@ -70,13 +74,13 @@
     padding: 0 5vw;
   }
 
-  .marquee .js-marquee .tag {
+  .marquee .tag {
     height: 8vw;
     line-height: 8vw;
     font-size: 4.5vw;
   }
 
-  .marquee .js-marquee .location {
+  .marquee .location {
     font-size: 3vw;
   }
 }
