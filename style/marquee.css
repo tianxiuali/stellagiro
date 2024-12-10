@@ -17,6 +17,7 @@
   padding: 0 20px;
   will-change: transform;
   animation: marquee 10s linear infinite;
+  animation-fill-mode: forwards;
 }
 
 @keyframes marquee {
