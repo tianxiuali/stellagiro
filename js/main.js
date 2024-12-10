@@ -101,19 +101,16 @@ initMenu()
 const initMarquee = () => {
   $(function () {
     $('.marquee').marquee({
-      duration: 5000
+      delayBeforeStart: 0,
+      duration: 8000,
     })
   })
 }
-// initMarquee()
+initMarquee()
 
 const initFaqClick = () => {
   $('.faq-list li').on('click', function () {
     $(this).find('.answer').slideToggle();
   })
-
-  // $('.faq-list li .question').on('touchstart', (e) => {
-  //   $(e.target).next('.answer').slideToggle();
-  // })
 }
 initFaqClick()

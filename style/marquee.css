@@ -1,23 +1,33 @@
 .marquee {
+  height: 60px;
+  background-color: #8cc63f;
+  color: #fff;
+  overflow: hidden;
+}
+
+.marquee .js-marquee-wrapper {
   display: flex;
   align-items: center;
   height: 60px;
   background-color: #8cc63f;
   color: #fff;
   font-size: 30px;
-  overflow: hidden;
+  will-change: transform;
 }
 
-.marquee .content {
+.marquee .content,
+.marquee .js-marquee {
   flex-shrink: 0;
   z-index: 1;
-  display: flex;
+  display: inline-flex;
   gap: 20px;
   align-items: center;
+  width: auto;
   padding: 0 20px;
-  will-change: transform;
-  animation: marquee 14s linear infinite;
-  animation-fill-mode: forwards;
+  margin: 0 !important;
+  /* will-change: transform; */
+  /* animation: marquee 14s linear infinite; */
+  /* animation-fill-mode: forwards; */
 }
 
 @keyframes marquee {
@@ -29,7 +39,7 @@
   }
 }
 
-.marquee .content .tag {
+.marquee .js-marquee .tag {
   flex-shrink: 0;
   height: 40px;
   padding: 0 10px;
@@ -39,18 +49,19 @@
   line-height: 40px;
 }
 
-.marquee .content .location {
+.marquee .js-marquee .location {
   flex-shrink: 0;
   font-size: 14px;
 }
 
-.marquee .content .location .location-img {
+.marquee .js-marquee .location .location-img {
   width: 11px;
   height: 14px;
 }
 
 @media screen and (max-width: 800px) {
-  .marquee {
+  .marquee,
+  .marquee .js-marquee-wrapper {
     height: 13vw;
     font-size: 5vw;
   }
@@ -59,13 +70,13 @@
     padding: 0 5vw;
   }
 
-  .marquee .content .tag {
+  .marquee .js-marquee .tag {
     height: 8vw;
     line-height: 8vw;
     font-size: 4.5vw;
   }
 
-  .marquee .content .location {
+  .marquee .js-marquee .location {
     font-size: 3vw;
   }
 }
