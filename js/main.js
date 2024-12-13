@@ -103,6 +103,8 @@ const initMarquee = () => {
     $('.marquee').marquee({
       delayBeforeStart: 0,
       duration: 8000,
+      // duplicated: true,
+      // startVisible: true,
     })
   })
 }

@@ -38,7 +38,7 @@
 
 .section8 .swiper .item {
   width: 340px;
-  height: 720px;
+  min-height: 720px;
   padding: 10px;
   background-color: #fff;
 }
@@ -123,7 +123,7 @@
 
   .section8 .swiper .item {
     width: 100%;
-    height: auto;
+    min-height: 163vw;
     padding: 20px;
     font-size: 3vw;
   }

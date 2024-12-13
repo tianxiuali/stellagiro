@@ -69,6 +69,7 @@
 }
 
 .section4 .info .content .time .open .special {
+  flex: 1;
   margin-left: 10px;
   color: #f39800;
 }
